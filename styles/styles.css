@@ -6,35 +6,110 @@
     border: none;
     outline: none;
 }
-body{
+
+body {
     background-color: rgb(22, 22, 22);
-    color:#e4e4e4;
+    color: #e4e4e4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
 }
-header{
-    padding: 60px;
+
+header {
+    padding: 60px 20px; /* Ajustado para combinar o estilo dos dois blocos */
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: x-large;
 }
-.logo{
-    font-size: 2rem; 
+
+.logo {
+    font-size: 2rem;
     color: rgb(255, 255, 255);
-    font-weight:800;
-    cursor:pointer ;
+    font-weight: 800;
+    cursor: pointer;
 }
-.logo-2{
-    color: rgb(71, 30, 255) ;
+
+.logo-2 {
+    color: rgb(71, 30, 255);
 }
-.descricao{
+
+a {
+    color: rgb(71, 30, 255);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descricao {
     font-size: 20px;
     margin-left: 50px;
-    margin-top: 330px;
+    margin-top: 300px; /* Pode ajustar conforme necessário */
 }
-.img-inicial{
-    border-radius: 50%;
+
+.img-inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
+
 .img-inicial img {
     border-radius: 50%;
-    border-left: 500px;
+    width: 300px;
+    height: 300px;
+}
+
+.caixa-receita {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+}
+
+.receita-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.bloco-receita {
+    padding: 20px;
+}
+
+.titulo-receita {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.receita-descricao {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.receita-link {
+    font-size: 1rem;
+    color: rgb(71, 30, 255);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.receita-link:hover {
+    color: #fff;
 }
