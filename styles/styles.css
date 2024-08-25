@@ -113,3 +113,38 @@ main {
 .receita-link:hover {
     color: #fff;
 }
+
+form legend{
+    padding: 0 10px;
+    font-weight: bold;
+    color: #333;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="numero"],
+form input[type="number"],
+form input[type="number"],
+form select,
+form textarea{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(71, 30, 255);
+    border-radius: 5px;
+    
+}
+form button{
+    cursor: pointer;
+    background-color: rgb(71, 30, 255);
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+h1{
+    text-align: center;
+    color: rgb(71, 30, 255);
+    margin-top: 60px;
+
+}
